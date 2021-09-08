@@ -70,8 +70,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
 
-##Reference
+## Reference
 
-###Dataset
-https://github.com/kocohub/korean-hate-speech/blob/master/labeled/train.tsv
+### Dataset
+https://github.com/kocohub/korean-hate-speech/blob/master/labeled/train.tsv \
 https://github.com/ZIZUN/korean-malicious-comments-dataset
