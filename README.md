@@ -84,3 +84,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### Korean Hate Speech Dataset
 https://github.com/kocohub/korean-hate-speech/blob/master/labeled/train.tsv \
 https://github.com/ZIZUN/korean-malicious-comments-dataset
+
+## Test Accuracy
+![image](https://user-images.githubusercontent.com/77087144/132781502-f1edb88e-ca56-4207-82f2-f8914468ea87.png)
+
