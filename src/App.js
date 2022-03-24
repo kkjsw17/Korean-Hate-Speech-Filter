@@ -1,24 +1,49 @@
-import logo from './logo.svg';
-import './App.css';
+import { Box, Button, Grid, TextField } from '@mui/material';
+import axios from 'axios';
+import { useState } from 'react';
 
-function App() {
+const App = () => {
+  const [comment, setComment] = useState('');
+  
+  const postComment = async () => {
+    await axios.post('http://127.0.0.1:5000/',
+      { comment: comment },
+    ).then(res => {
+      if (res.data === 1) {
+        alert('악플');
+      } else {
+        alert('노악플');
+      }
+    });
+
+    setComment('');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Box>
+      <Grid container spacing={0.5}>
+        <Grid item xs={10}>
+          <TextField
+            multiline
+            fullWidth
+            value={comment}
+            label="Hate Speech Filter"
+            placeholder="댓글을 입력하세요."
+            onChange={(e) => { setComment(e.target.value) }}
+          />
+        </Grid>
+        <Grid item xs={2}>
+          <Button
+            variant='contained'
+            fullWidth
+            sx={{ height: '100%', fontSize: 18 }}
+            onClick={postComment}
+          >
+            작성
+          </Button>
+        </Grid>
+      </Grid>
+    </Box>
   );
 }
 
