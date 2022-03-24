@@ -1,29 +1,42 @@
 # Hate Speech Filter
 This project was conducted in 2021-1 semester as part of Konkuk univ. Open Source SW Project 1 project.\
 It functions as a discriminator whether sentence that client inputs is a hate-speech, using KoBERT.
-## Getting Started Hate-Speech-Filter
-### 1. install node modules
+* [Hate Speech Filter](#hate-speech-filter)
+  * [How to install](#how-to-install)
+    * [Install node modules](#install-node-modules)
+    * [Install python modules](#install-python-modules)
+    * [Get model checkpoint file](#get-model-checkpoint-file-for-load)
+  * [Getting Started](#getting-started)
+    * [Run flask server](#run-flask-server)
+    * [Run front-end](#run-front-end)
+  * [Model Architecture](#model-architecture)
+  * [Test Accuracy](#test-accuracy)
+  * [Reference](#reference)
+    * [KoBERT](#kobert)
+    * [Data](#data)
+## How to install
+### Install node modules
 ```
 npm i
 ```
-### 2. install python modules
+### Install python modules
 ```
 pip install -r requirements.txt
 ```
-### 3. get model checkpoint file (for load)
+### Get model checkpoint file (for load)
 ```
 python src/server/get_model.py
 ```
-### 4. run flask server
+## Getting started
+### Run flask server
 ```
 python src/server/app.py
 ```
-### 5. run front-end
+### Run front-end
 ```
 npm start
 ```
-
-## Architecture
+## Model Architecture
 ### 1. BERT
 ![KakaoTalk_20210908_220746731](https://user-images.githubusercontent.com/39490214/132515385-4b2d0325-dbfd-45c3-974e-d6ef8e72b554.png)
 ### 2. BERT + CNN
@@ -32,14 +45,11 @@ npm start
 ![KakaoTalk_20210908_220804347](https://user-images.githubusercontent.com/39490214/132515733-2366470f-94d7-4ce2-b838-adff55e6b38c.png)
 ### 4. BERT + Ensembled CNN + BiLSTM
 ![KakaoTalk_20210908_220822686](https://user-images.githubusercontent.com/39490214/132515781-6d5f029c-1e0a-42e3-b14e-61842841eac3.png)
-
 ## Test Accuracy
 ![image](https://user-images.githubusercontent.com/77087144/132781502-f1edb88e-ca56-4207-82f2-f8914468ea87.png)
-
-# Reference
-### KoBART
-https://github.com/SKT-AI/KoBART
-### Korean Hate Speech Dataset
-https://github.com/kocohub/korean-hate-speech/blob/master/labeled/train.tsv \
-https://github.com/ZIZUN/korean-malicious-comments-dataset
-
+## Reference
+### KoBERT
+https://github.com/SKTBrain/KoBERT
+### Data
+1. [Korean HateSpeech Dataset, ](https://github.com/kocohub/korean-hate-speech/blob/master/labeled/train.tsv)
+2. [korean-malicious-comments-dataset](https://github.com/ZIZUN/korean-malicious-comments-dataset)
