@@ -1,7 +1,7 @@
 # Hate Speech Filter
-
 This project was conducted in 2021-1 semester as part of Konkuk univ. Open Source SW Project 1 project.\
 It functions as a discriminator whether sentence that client inputs is a hate-speech, using KoBERT.
+![banner](https://user-images.githubusercontent.com/39583312/160071672-af0e628c-d27c-41fd-b52c-7c80c0181dbe.png)
 
 * [Hate Speech Filter](#hate-speech-filter)
   * [How to install](#how-to-install)
@@ -11,6 +11,7 @@ It functions as a discriminator whether sentence that client inputs is a hate-sp
   * [Getting Started](#getting-started)
     * [Run flask server](#run-flask-server)
     * [Run front-end](#run-front-end)
+  * [Demo](#demo)
   * [Model Architecture](#model-architecture)
   * [Test Accuracy](#test-accuracy)
   * [Reference](#reference)
@@ -47,6 +48,19 @@ python src/server/app.py
 ```
 npm start
 ```
+
+## Demo
+<table>
+  <tr>
+     <td> <img src="demo/1.png" alt="1" ></td>
+     <td><img src="demo/2.png" alt="2" ></td>
+  </tr>
+  <tr>
+     <td><img src="demo/3.png" alt="3" ></td>
+     <td><img src="demo/1.png" alt="4" ></td>
+  </tr>
+</table>
+
 
 ## Model Architecture
 
