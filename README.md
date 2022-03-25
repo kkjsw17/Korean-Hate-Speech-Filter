@@ -5,8 +5,7 @@ It functions as a discriminator whether sentence that client inputs is a hate-sp
 
 * [Hate Speech Filter](#hate-speech-filter)
   * [How to install](#how-to-install)
-    * [Install node modules](#install-node-modules)
-    * [Install python modules](#install-python-modules)
+    * [Clone project and install modules](#clone-project-and-install-modules)
     * [Get model checkpoint file](#get-model-checkpoint-file-for-load)
   * [Getting Started](#getting-started)
     * [Run flask server](#run-flask-server)
@@ -22,13 +21,11 @@ It functions as a discriminator whether sentence that client inputs is a hate-sp
 
 ## How to install
 
-### Install node modules
+### Clone project and install modules
 ```
+git clone https://github.com/kkjsw17/Korean-Hate-Speech-Filter.git
+cd Korean-Hate-Speech-Filter
 npm i
-```
-
-### Install python modules
-```
 pip install -r requirements.txt
 ```
 
