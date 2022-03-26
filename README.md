@@ -1,5 +1,5 @@
 # Korean Hate Speech Filter
-This project was conducted in 2021-1 semester as part of Konkuk univ. Open Source SW Project 1 project.\
+This project was conducted in 2021-1 semester as part of final project of Konkuk univ. "Open Source SW Project 1".\
 It functions as a discriminator whether sentence that client inputs is a hate-speech, using KoBERT.
 ![banner](https://user-images.githubusercontent.com/39583312/160071672-af0e628c-d27c-41fd-b52c-7c80c0181dbe.png)
 
