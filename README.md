@@ -54,12 +54,12 @@ npm start
    <td align=center>Detection</td>
   </tr>
   <tr>
-    <td><img src="demo/1.png" alt="1" ></td>
-    <td><img src="demo/3.png" alt="2" ></td>
+    <td><img src="demo/3.png" alt="1" ></td>
+    <td><img src="demo/1.png" alt="2" ></td>
   </tr>
   <tr>
-    <td><img src="demo/2.png" alt="3" ></td>
-    <td><img src="demo/4.png" alt="4" ></td>
+    <td><img src="demo/4.png" alt="3" ></td>
+    <td><img src="demo/2.png" alt="4" ></td>
   </tr>
 </table>
 
